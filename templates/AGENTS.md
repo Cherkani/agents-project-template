@@ -95,3 +95,10 @@ Use gstack as the primary development workflow: `/gstack-autoplan`, `/gstack-rev
 - Verify environment variables, migrations, logs, health checks, and the affected user workflow.
 - Deploy only with explicit approval.
 - Update the task tracker after release and record the verification result.
+
+## Deployment Safety
+
+- Before deploying a released feature, investigate the repository and deployment state with `/gstack-investigate` and `/gstack-setup-deploy` or the project's documented equivalent.
+- Confirm the target branch, platform, current version, environment mapping, migrations, health checks, logs, rollback path, and required local credentials before deployment.
+- Use local environment variables, an SSH agent, platform CLI login, or the project's secret manager. Never print, copy, commit, upload, or add key values to ClickUp, logs, documentation, or agent instructions.
+- Deploy only after explicit approval. After deployment, run `/gstack-canary`, inspect logs, execute the affected smoke test, and record only secret-free evidence.
