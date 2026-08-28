@@ -3,7 +3,7 @@ set -euo pipefail
 
 codex_home="${CODEX_SHARED_HOME:-$HOME/.codex_shared}"
 template_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-backup_root="$codex_home/skills/.aymenstack-backups/$(date +%Y%m%d-%H%M%S)"
+backup_root="$codex_home/skills/.cstack-backups/$(date +%Y%m%d-%H%M%S)"
 
 mkdir -p "$codex_home/skills"
 for skill_dir in "$template_root"/skills/cstack-*; do

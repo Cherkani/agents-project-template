@@ -11,12 +11,12 @@ Feature work is merged into `develop` first. Production promotion is a separate 
 ## Release Commands
 
 ```text
-/plan-eng-review
-/ship
-/land-and-deploy
+/gstack-plan-eng-review
+/gstack-ship
+/gstack-land-and-deploy
 ```
 
-Use `/ship` for a feature branch. Use `/land-and-deploy` only for an approved promotion after checking the release diff. If that skill is not installed, follow the project's documented release script.
+Use `/gstack-ship` for a feature branch. Use `/gstack-land-and-deploy` only for an approved promotion after checking the release diff. If that skill is not installed, follow the project's documented release script.
 
 ## Release Evidence
 

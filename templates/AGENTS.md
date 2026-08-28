@@ -41,7 +41,7 @@ Use the shared CStack skills for repeatable project work:
 - `$cstack-understand`: after testing, generate a local explanation and reproduction guide for the completed change.
 - `$cstack-release`: prepare the develop-to-production release summary and promotion checklist after explicit approval.
 
-These commands compose with gstack. Use gstack's `/review`, `/qa`, `/ship`, `/land-and-deploy`, and `/canary` where their narrower workflow is needed.
+These commands compose with the complete prefixed gstack catalog. Use the routing map in `config/cstack-workflows.md`; examples include `/gstack-autoplan`, `/gstack-review`, `/gstack-qa`, `/gstack-cso`, `/gstack-document-generate`, `/gstack-ship`, `/gstack-land-and-deploy`, and `/gstack-canary`.
 
 ## Implementation Rules
 
@@ -88,9 +88,9 @@ These commands compose with gstack. Use gstack's `/review`, `/qa`, `/ship`, `/la
 
 - Start feature branches from `develop` using `feature/<clickup-task-id>-<short-slug>` when a ClickUp task exists.
 - Open feature pull requests into `develop`; do not work directly on `develop` or the production branch.
-- Use `/ship` on a completed feature branch to run checks, review the diff, and prepare the feature for merge.
+- Use `/gstack-ship` on a completed feature branch to run checks, review the diff, and prepare the feature for merge.
 - Before production promotion, compare `develop` with the production branch and list every included commit, pull request, and ClickUp task.
-- Use `/plan-eng-review` for the release plan, then `/land-and-deploy` or the project's documented promotion command to merge and deploy after approval.
+- Use `/gstack-plan-eng-review` for the release plan, then `/gstack-land-and-deploy` or the project's documented promotion command to merge and deploy after approval.
 - Create one release summary containing included features, migrations, tests, deployment result, risks, and rollback steps; keep individual feature tickets unchanged.
 - Update the release task with the complete included-task list and link the release back to the feature branches or pull requests.
 - Follow the project's documented development-to-production path.

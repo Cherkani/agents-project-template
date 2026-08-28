@@ -43,6 +43,8 @@ cstack-understand
 
 They compose gstack with Graphify, ClickUp, the project `AGENTS.md`, official skill discovery, security checks, and the develop-to-production workflow. `cstack-understand` generates project-local learning and reproduction documentation after verification. They are intentionally small and do not duplicate gstack internals.
 
+The full gstack catalog is installed with the `gstack-` prefix. See `config/cstack-workflows.md` for routing and specialist groups. Keeping the prefix avoids collisions with CStack and other skill packs while preserving every gstack command.
+
 ## Project-scoped
 
 Graphify is installed separately inside each project by the bootstrap script. This keeps each repository's graph and context isolated.

@@ -24,7 +24,7 @@ else
   echo "Preserved existing configuration at $shared_home/config.toml"
 fi
 
-CODEX_HOME="$shared_home" "$gstack_dir/setup" --host codex
+CODEX_HOME="$shared_home" "$gstack_dir/setup" --host codex --prefix
 "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/install-cstack.sh"
 
 cat <<EOF

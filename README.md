@@ -63,6 +63,8 @@ Discover with Graphify -> define goal -> plan -> implement -> test -> review -> 
 
 For branch-based work, use `feature/<clickup-task-id>-<short-slug> -> develop -> production`. See `config/release-workflow.md` for the release evidence and gstack command sequence.
 
+See `config/cstack-workflows.md` for the complete gstack catalog and the routing from each CStack command to its specialist workflows.
+
 Use the repository's own package manager and scripts. Never assume that commands in this template exist in every project.
 
 ## Optional Integrations
