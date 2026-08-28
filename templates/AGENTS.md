@@ -31,17 +31,13 @@ Inspect the relevant code and docs before editing. Keep this short for trivial q
 - Define the goal and acceptance criteria before implementation.
 - Use the project's architecture and existing patterns before adding dependencies or abstractions.
 
-## CStack Workflow
+## CStack Ticket Workflow
 
-Use the shared CStack skills for repeatable project work:
+Use CStack only for the project-specific ClickUp integration:
 
-- `$cstack-plan`: inspect the repository and Graphify map, define acceptance criteria, check ClickUp, and produce the implementation plan.
-- `$cstack-build`: implement the approved plan on a feature branch and record meaningful ClickUp milestones.
-- `$cstack-test`: run focused checks, browser verification when relevant, security checks, and collect evidence.
-- `$cstack-understand`: after testing, generate a local explanation and reproduction guide for the completed change.
-- `$cstack-release`: prepare the develop-to-production release summary and promotion checklist after explicit approval.
+- `$cstack-ticket`: search or create a ClickUp task using the repository mapping, naming, scheduling, assignee, and milestone rules.
 
-These commands compose with the complete prefixed gstack catalog. Use the routing map in `config/cstack-workflows.md`; examples include `/gstack-autoplan`, `/gstack-review`, `/gstack-qa`, `/gstack-cso`, `/gstack-document-generate`, `/gstack-ship`, `/gstack-land-and-deploy`, and `/gstack-canary`.
+Use gstack as the primary development workflow: `/gstack-autoplan`, `/gstack-review`, `/gstack-qa`, `/gstack-cso`, `/gstack-document-generate`, `/gstack-document-release`, `/gstack-ship`, `/gstack-land-and-deploy`, and `/gstack-canary`.
 
 ## Implementation Rules
 

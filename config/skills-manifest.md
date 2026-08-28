@@ -31,17 +31,13 @@ The gstack installer provides planning, review, QA, health, deployment, and rele
 
 ## CStack
 
-This template adds five focused orchestration skills in `skills/cstack-*`:
+This template adds one focused project integration skill in `skills/cstack-*`:
 
 ```text
-cstack-plan
-cstack-build
-cstack-test
-cstack-release
-cstack-understand
+cstack-ticket
 ```
 
-They compose gstack with Graphify, ClickUp, the project `AGENTS.md`, official skill discovery, security checks, and the develop-to-production workflow. `cstack-understand` generates project-local learning and reproduction documentation after verification. They are intentionally small and do not duplicate gstack internals.
+It provides your ClickUp search, task naming, scheduling, assignment, milestone, and safety rules. It intentionally does not duplicate gstack's planning, implementation, QA, security, documentation, or release workflows.
 
 The full gstack catalog is installed with the `gstack-` prefix. See `config/cstack-workflows.md` for routing and specialist groups. Keeping the prefix avoids collisions with CStack and other skill packs while preserving every gstack command.
 

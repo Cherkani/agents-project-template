@@ -31,10 +31,10 @@ On a new laptop or after creating a new shared Codex home:
 
 This installs or updates gstack, installs the recommended skills, and creates a sanitized `config.toml` only when the shared Codex home does not already have one. It never copies authentication, memory, session, history, or runtime files. See `config/skills-manifest.md` for the recommended skill groups.
 
-It also installs **CStack**, the project workflow layer built around your preferred process:
+It also installs **CStack**, the small Cherkani-specific layer for ClickUp ticket conventions:
 
 ```text
-$cstack-plan -> $cstack-build -> $cstack-test -> $cstack-understand -> $cstack-release
+$cstack-ticket
 ```
 
 The default shared home is `~/.codex_shared`. Override it with `CODEX_SHARED_HOME=/path/to/shared-home` when needed.
@@ -58,7 +58,7 @@ This reproduces the shared gstack, Graphify, configuration template, project ins
 ## Recommended Workflow
 
 ```text
-Discover with Graphify -> define goal -> plan -> implement -> test -> review -> release
+Create/search ticket with CStack -> plan/build/test/review/release with gstack -> document with gstack
 ```
 
 For branch-based work, use `feature/<clickup-task-id>-<short-slug> -> develop -> production`. See `config/release-workflow.md` for the release evidence and gstack command sequence.

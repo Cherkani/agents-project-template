@@ -1,22 +1,18 @@
 # CStack Workflow Map
 
-CStack is the short, project-aware entry layer. gstack remains the maintained specialist library and is installed with the `gstack-` prefix so both systems can coexist without name collisions.
+CStack is the short, Cherkani-specific ClickUp integration. gstack is the primary maintained workflow library and is installed with the `gstack-` prefix so both systems can coexist without name collisions.
 
 ## Main Workflow
 
 ```text
-$cstack-plan -> $cstack-build -> $cstack-test -> $cstack-understand -> $cstack-release
+$cstack-ticket -> /gstack-autoplan -> implementation -> /gstack-qa -> /gstack-review -> /gstack-ship -> /gstack-land-and-deploy
 ```
 
 ## CStack To Gstack Routing
 
 | CStack command | Use these gstack specialists when needed |
 | --- | --- |
-| `$cstack-plan` | `/gstack-office-hours`, `/gstack-autoplan`, `/gstack-plan-ceo-review`, `/gstack-plan-eng-review`, `/gstack-plan-design-review`, `/gstack-plan-devex-review`, `/gstack-spec` |
-| `$cstack-build` | `/gstack-health`, `/gstack-diagram`, `/gstack-investigate`, `/gstack-codex` |
-| `$cstack-test` | `/gstack-qa`, `/gstack-qa-only`, `/gstack-browse`, `/gstack-review`, `/gstack-cso`, `/gstack-health` |
-| `$cstack-understand` | `/gstack-document-generate`, `/gstack-document-release`, `/gstack-learn` |
-| `$cstack-release` | `/gstack-landing-report`, `/gstack-review`, `/gstack-ship`, `/gstack-land-and-deploy`, `/gstack-canary`, `/gstack-retro` |
+| `$cstack-ticket` | Search/create the mapped ClickUp task, then use gstack for the complete development lifecycle. |
 
 ## Specialist Groups
 
