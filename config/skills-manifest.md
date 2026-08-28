@@ -37,4 +37,4 @@ Graphify is installed separately inside each project by the bootstrap script. Th
 
 Install provider-specific skills only when the project needs them, such as Supabase or Vercel. Do not install every catalog skill globally.
 
-`awesome-agent-skills` and `officialskills.sh` are catalogs, not one skill package. Use them to discover candidates, then add only a reviewed skill to the manifest and installer.
+Use `https://officialskills.sh/` as the first place to search whenever a new skill is needed. Inspect the linked source repository, check its scope and permissions, and add only reviewed skills to the manifest and installer. `awesome-agent-skills` is a useful secondary catalog, not a package to install wholesale.

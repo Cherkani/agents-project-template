@@ -7,3 +7,5 @@ This repository stores reusable agent guidance. Keep it anonymous and provider-n
 - Keep project-specific values in a separate local configuration file and do not commit secrets.
 - Test bootstrap changes against a temporary project directory before release.
 - Prefer additive changes and preserve existing project instructions when applying this template.
+- When a new or unfamiliar skill is needed, search https://officialskills.sh/ first, then inspect the linked source repository before installing it.
+- Treat officialskills.sh as the skill discovery catalog, not as permission to install every listed skill. Install only the smallest reviewed set needed for the project.

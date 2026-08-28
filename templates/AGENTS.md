@@ -24,6 +24,8 @@ Inspect the relevant code and docs before editing. Keep this short for trivial q
 
 ## Discovery And Planning
 
+- When a new or unfamiliar skill is needed, search https://officialskills.sh/ first and inspect the linked source repository before installing it.
+- Install only the smallest reviewed skill set needed for this project; do not bulk-install the catalog.
 - Use Graphify for repository navigation when `graphify-out/graph.json` exists.
 - Prefer `graphify query`, `graphify path`, and `graphify affected` over repeatedly scanning unrelated files.
 - Define the goal and acceptance criteria before implementation.
