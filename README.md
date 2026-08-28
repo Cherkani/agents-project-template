@@ -27,7 +27,7 @@ flowchart LR
     SH --> CS[$cstack router]
     CS --> CT["$cstack-ticket<br/>ClickUp"]
     CS --> GS[gstack specialists]
-    CS --> OS[officialskills.sh\nwhen a skill is missing]
+    CS --> OS["officialskills.sh<br/>when a skill is missing"]
     GS --> GF["Graphify<br/>project graph"]
     GS --> AR["AGENTS.md<br/>project rules"]
     GS --> TEST[tests + browser + security]
