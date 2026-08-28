@@ -63,10 +63,12 @@ Inspect the relevant code and docs before editing. Keep this short for trivial q
 - Name new tasks with: `YYYY-MM-DD (Day) | Subject | Work: Xh | Close: HH:MM`.
 - Use the task start date/time, due date/time, and time estimate fields in addition to the name; the name is a quick human-readable summary.
 - Use the project timezone for weekday, start, due, and close times.
+- For tracked work, start ClickUp time tracking when implementation begins, stop it when pausing or finishing, and report actual time separately from the estimate.
 - Create tasks in the mapped list; a ClickUp board is normally a view of a list.
 - State the task/list and intended external write before creating or changing work.
 - Never modify, move, reassign, close, or delete an existing task unless the user identifies it and requests the change.
 - Add milestone comments for plan approval, implementation, tests, review, and release.
+- Completion comments should include `Estimated: Xh`, `Actual: Xh`, `Started: YYYY-MM-DD HH:MM`, and `Closed: YYYY-MM-DD HH:MM`.
 - When blocked, record the blocker, what was tried, and what is needed.
 - Include the task ID in branch names, commits, and pull requests when available.
 
