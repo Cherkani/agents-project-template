@@ -31,6 +31,17 @@ Inspect the relevant code and docs before editing. Keep this short for trivial q
 - Define the goal and acceptance criteria before implementation.
 - Use the project's architecture and existing patterns before adding dependencies or abstractions.
 
+## AymenStack Workflow
+
+Use the shared AymenStack skills for repeatable project work:
+
+- `$aymen-plan`: inspect the repository and Graphify map, define acceptance criteria, check ClickUp, and produce the implementation plan.
+- `$aymen-build`: implement the approved plan on a feature branch and record meaningful ClickUp milestones.
+- `$aymen-test`: run focused checks, browser verification when relevant, security checks, and collect evidence.
+- `$aymen-release`: prepare the develop-to-production release summary and promotion checklist after explicit approval.
+
+These commands compose with gstack. Use gstack's `/review`, `/qa`, `/ship`, `/land-and-deploy`, and `/canary` where their narrower workflow is needed.
+
 ## Implementation Rules
 
 - Keep changes scoped to the requested feature and preserve unrelated user changes.

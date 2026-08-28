@@ -29,6 +29,19 @@ nextlevelbuilder/ui-ux-pro-max-skill
 
 The gstack installer provides planning, review, QA, health, deployment, and release skills. Keep the installation in the shared Codex home so Codex1 and Codex2 can use the same tools. The full gstack repository is available at https://github.com/garrytan/gstack; only the most frequently used commands stay in the active catalog to preserve context budget.
 
+## AymenStack
+
+This template adds four focused orchestration skills in `skills/aymen-*`:
+
+```text
+aymen-plan
+aymen-build
+aymen-test
+aymen-release
+```
+
+They compose gstack with Graphify, ClickUp, the project `AGENTS.md`, official skill discovery, security checks, and the develop-to-production workflow. They are intentionally small and do not duplicate gstack internals.
+
 ## Project-scoped
 
 Graphify is installed separately inside each project by the bootstrap script. This keeps each repository's graph and context isolated.
