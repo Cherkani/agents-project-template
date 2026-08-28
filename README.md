@@ -33,6 +33,22 @@ This installs or updates gstack and creates a sanitized `config.toml` only when 
 
 The default shared home is `~/.codex_shared`. Override it with `CODEX_SHARED_HOME=/path/to/shared-home` when needed.
 
+## Reproduce The Full Environment
+
+On a new laptop, after installing Git and Codex CLI:
+
+```bash
+./scripts/setup-machine.sh
+```
+
+Then apply the project instructions to each repository:
+
+```bash
+./scripts/bootstrap-project.sh /absolute/path/to/project
+```
+
+This reproduces the shared gstack, Graphify, configuration template, project instructions, and recommended workflow. ClickUp still needs one interactive OAuth connection per laptop because account credentials cannot safely be cloned from Git.
+
 ## Recommended Workflow
 
 ```text
