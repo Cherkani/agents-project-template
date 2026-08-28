@@ -55,6 +55,8 @@ This reproduces the shared gstack, Graphify, configuration template, project ins
 Discover with Graphify -> define goal -> plan -> implement -> test -> review -> release
 ```
 
+For branch-based work, use `feature/<clickup-task-id>-<short-slug> -> develop -> production`. See `config/release-workflow.md` for the release evidence and gstack command sequence.
+
 Use the repository's own package manager and scripts. Never assume that commands in this template exist in every project.
 
 ## Optional Integrations

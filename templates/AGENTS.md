@@ -74,6 +74,13 @@ Inspect the relevant code and docs before editing. Keep this short for trivial q
 
 ## Release
 
+- Start feature branches from `develop` using `feature/<clickup-task-id>-<short-slug>` when a ClickUp task exists.
+- Open feature pull requests into `develop`; do not work directly on `develop` or the production branch.
+- Use `/ship` on a completed feature branch to run checks, review the diff, and prepare the feature for merge.
+- Before production promotion, compare `develop` with the production branch and list every included commit, pull request, and ClickUp task.
+- Use `/plan-eng-review` for the release plan, then `/land-and-deploy` or the project's documented promotion command to merge and deploy after approval.
+- Create one release summary containing included features, migrations, tests, deployment result, risks, and rollback steps; keep individual feature tickets unchanged.
+- Update the release task with the complete included-task list and link the release back to the feature branches or pull requests.
 - Follow the project's documented development-to-production path.
 - Verify environment variables, migrations, logs, health checks, and the affected user workflow.
 - Deploy only with explicit approval.
