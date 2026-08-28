@@ -15,8 +15,6 @@ fi
 
 "$template_root/scripts/install-codex-shared.sh"
 
-"$template_root/scripts/install-recommended-skills.sh"
-
 if command -v uv >/dev/null 2>&1; then
   uv tool install --upgrade 'graphifyy[sql]'
 else

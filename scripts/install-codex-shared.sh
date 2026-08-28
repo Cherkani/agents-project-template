@@ -31,6 +31,7 @@ CODEX_HOME="$shared_home" "$gstack_dir/setup" --host codex --prefix
 "$gstack_dir/bin/gstack-config" set checkpoint_mode explicit
 "$gstack_dir/bin/gstack-config" set codex_reviews enabled
 "$gstack_dir/bin/gstack-config" set redact_prepush_hook true
+"$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/install-recommended-skills.sh"
 "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/install-cstack.sh"
 
 cat <<EOF
