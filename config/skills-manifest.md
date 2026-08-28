@@ -16,9 +16,18 @@ security-best-practices
 security-threat-model
 ```
 
+The portable installer pulls these from their source repositories:
+
+```text
+ibelick/ui-skills
+trailofbits/skills
+openai/skills
+nextlevelbuilder/ui-ux-pro-max-skill
+```
+
 ## gstack
 
-The gstack installer provides planning, review, QA, health, deployment, and release skills. Keep the installation in the shared Codex home so Codex1 and Codex2 can use the same tools.
+The gstack installer provides planning, review, QA, health, deployment, and release skills. Keep the installation in the shared Codex home so Codex1 and Codex2 can use the same tools. The full gstack repository is available at https://github.com/garrytan/gstack; only the most frequently used commands stay in the active catalog to preserve context budget.
 
 ## Project-scoped
 
@@ -27,3 +36,5 @@ Graphify is installed separately inside each project by the bootstrap script. Th
 ## Optional providers
 
 Install provider-specific skills only when the project needs them, such as Supabase or Vercel. Do not install every catalog skill globally.
+
+`awesome-agent-skills` and `officialskills.sh` are catalogs, not one skill package. Use them to discover candidates, then add only a reviewed skill to the manifest and installer.
