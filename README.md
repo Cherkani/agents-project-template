@@ -31,6 +31,8 @@ On a new laptop or after creating a new shared Codex home:
 
 This installs or updates gstack and creates a sanitized `config.toml` only when the shared Codex home does not already have one. It never copies authentication, memory, session, history, or runtime files. See `config/skills-manifest.md` for the recommended skill groups.
 
+The default shared home is `~/.codex_shared`. Override it with `CODEX_SHARED_HOME=/path/to/shared-home` when needed.
+
 ## Recommended Workflow
 
 ```text

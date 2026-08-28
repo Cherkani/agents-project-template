@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-shared_home="${CODEX_HOME:-$HOME/.codex_shared}"
+shared_home="${CODEX_SHARED_HOME:-$HOME/.codex_shared}"
 gstack_dir="${GSTACK_DIR:-$HOME/.local/share/gstack}"
 
 mkdir -p "$shared_home"
