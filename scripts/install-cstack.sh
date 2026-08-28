@@ -23,4 +23,4 @@ for skill_dir in "$template_root"/skills/cstack-*; do
   echo "installed $name"
 done
 
-echo "CStack ticket integration installed in $codex_home/skills"
+echo "CStack router and ClickUp integration installed in $codex_home/skills"

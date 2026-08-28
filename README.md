@@ -31,9 +31,10 @@ On a new laptop or after creating a new shared Codex home:
 
 This installs or updates gstack, installs the recommended skills, and creates a sanitized `config.toml` only when the shared Codex home does not already have one. It never copies authentication, memory, session, history, or runtime files. See `config/skills-manifest.md` for the recommended skill groups.
 
-It also installs **CStack**, the small Cherkani-specific layer for ClickUp ticket conventions:
+It also installs **CStack**, the Cherkani-specific router and ClickUp integration:
 
 ```text
+$cstack
 $cstack-ticket
 ```
 
@@ -60,7 +61,7 @@ The installer configures gstack as the primary workflow with proactive routing, 
 ## Recommended Workflow
 
 ```text
-Create/search ticket with CStack -> plan/build/test/review/release with gstack -> document with gstack
+$cstack -> gstack planning/build/test/review/documentation/release
 ```
 
 For branch-based work, use `feature/<clickup-task-id>-<short-slug> -> develop -> production`. See `config/release-workflow.md` for the release evidence and gstack command sequence.

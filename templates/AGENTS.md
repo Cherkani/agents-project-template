@@ -33,8 +33,9 @@ Inspect the relevant code and docs before editing. Keep this short for trivial q
 
 ## CStack Ticket Workflow
 
-Use CStack only for the project-specific ClickUp integration:
+Use CStack as the project-aware router and for the project-specific ClickUp integration:
 
+- `$cstack`: inspect the project, Graphify map, available skills, and route the task to the correct gstack workflow.
 - `$cstack-ticket`: search or create a ClickUp task using the repository mapping, naming, scheduling, assignee, and milestone rules.
 
 Use gstack as the primary development workflow: `/gstack-autoplan`, `/gstack-review`, `/gstack-qa`, `/gstack-cso`, `/gstack-document-generate`, `/gstack-document-release`, `/gstack-ship`, `/gstack-land-and-deploy`, and `/gstack-canary`.
