@@ -31,16 +31,17 @@ The gstack installer provides planning, review, QA, health, deployment, and rele
 
 ## AymenStack
 
-This template adds four focused orchestration skills in `skills/aymen-*`:
+This template adds five focused orchestration skills in `skills/aymen-*`:
 
 ```text
 aymen-plan
 aymen-build
 aymen-test
 aymen-release
+aymen-understand
 ```
 
-They compose gstack with Graphify, ClickUp, the project `AGENTS.md`, official skill discovery, security checks, and the develop-to-production workflow. They are intentionally small and do not duplicate gstack internals.
+They compose gstack with Graphify, ClickUp, the project `AGENTS.md`, official skill discovery, security checks, and the develop-to-production workflow. `aymen-understand` generates project-local learning and reproduction documentation after verification. They are intentionally small and do not duplicate gstack internals.
 
 ## Project-scoped
 

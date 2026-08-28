@@ -34,7 +34,7 @@ This installs or updates gstack, installs the recommended skills, and creates a 
 It also installs **AymenStack**, the project workflow layer built around your preferred process:
 
 ```text
-$aymen-plan -> $aymen-build -> $aymen-test -> $aymen-release
+$aymen-plan -> $aymen-build -> $aymen-test -> $aymen-understand -> $aymen-release
 ```
 
 The default shared home is `~/.codex_shared`. Override it with `CODEX_SHARED_HOME=/path/to/shared-home` when needed.
