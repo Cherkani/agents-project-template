@@ -4,6 +4,13 @@ set -euo pipefail
 shared_home="${CODEX_SHARED_HOME:-$HOME/.codex_shared}"
 gstack_dir="${GSTACK_DIR:-$HOME/.local/share/gstack}"
 
+for command_name in git node bun; do
+  if ! command -v "$command_name" >/dev/null 2>&1; then
+    echo "$command_name is required to install gstack." >&2
+    exit 1
+  fi
+done
+
 mkdir -p "$shared_home"
 
 if [[ -e "$gstack_dir" && ! -d "$gstack_dir/.git" ]]; then

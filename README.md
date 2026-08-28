@@ -24,8 +24,8 @@ flowchart LR
     SH["Shared Tool Store<br/>gstack + CStack + config"] --> C1["Codex 1 profile<br/>separate auth"]
     SH --> C2["Codex 2 profile<br/>separate auth"]
     VS["Optional VS Code /<br/>DeepSeek Harness adapter"] --> CP["one selected Codex profile"]
-    CP --> CS[$cstack router]
-    C1 --> CS[$cstack router]
+    CP --> CS["$cstack router"]
+    C1 --> CS["$cstack router"]
     C2 --> CS
     CS --> CT["$cstack-ticket<br/>ClickUp"]
     CS --> GS[gstack specialists]
@@ -62,6 +62,15 @@ This installs or updates:
 - shared Codex configuration
 - Graphify tooling when `uv` is available
 
+Setup ends with a read-only verification pass. Repeat it at any time with:
+
+```bash
+./scripts/verify-setup.sh
+```
+
+It checks the shared config, required gstack and CStack skills, expected gstack safety settings, and Graphify availability. It never
+reads or prints authentication tokens.
+
 DeepSeek Harness is not a prerequisite. Use it only if you specifically want its VS Code panel or provider routing.
 
 The default shared home is:
@@ -77,6 +86,10 @@ CODEX_SHARED_HOME=/path/to/shared-home ./scripts/install-codex-shared.sh
 ```
 
 Authenticate accounts separately. Connect ClickUp interactively on each laptop. Credentials, memories, sessions, and runtime databases are never cloned by this repository.
+
+The shared home is a tools and sanitized-configuration store, not a merged account. Codex1 and Codex2 cannot share one live
+conversation or combine account limits. If separate profile launchers point at shared session or SQLite state, stop one before
+starting the other.
 
 ## Add A Project
 
@@ -132,6 +145,9 @@ implement the fix
 /gstack-health
 /gstack-review
 ```
+
+Some Codex hosts display gstack skills without the `gstack-` prefix, such as `$qa` instead of `$gstack-qa`. Use the name shown by
+Codex; the installed skill and workflow are the same.
 
 ## Skill Discovery
 
@@ -253,6 +269,7 @@ No system can guarantee secret safety. Review commands that access external serv
 ├── scripts/install-codex-shared.sh   # gstack + selected skills + CStack
 ├── scripts/install-cstack.sh         # CStack-only refresh
 ├── scripts/bootstrap-project.sh      # project Graphify and AGENTS setup
+├── scripts/verify-setup.sh           # read-only installation health check
 ├── config/cstack-workflows.md        # routing map
 ├── config/skills-manifest.md         # selected skills and sources
 ├── config/integrations.md            # ClickUp and account boundaries
@@ -265,6 +282,7 @@ Skill not visible:
 
 ```bash
 CODEX_SHARED_HOME="$HOME/.codex_shared" ./scripts/install-codex-shared.sh
+./scripts/verify-setup.sh
 ```
 
 gstack skills stale:

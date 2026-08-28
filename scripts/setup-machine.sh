@@ -13,6 +13,13 @@ if ! command -v codex >/dev/null 2>&1; then
   exit 1
 fi
 
+for command_name in node bun; do
+  if ! command -v "$command_name" >/dev/null 2>&1; then
+    echo "$command_name is required by gstack. Install it, then rerun this script." >&2
+    exit 1
+  fi
+done
+
 "$template_root/scripts/install-codex-shared.sh"
 
 if command -v uv >/dev/null 2>&1; then
@@ -20,6 +27,8 @@ if command -v uv >/dev/null 2>&1; then
 else
   echo "uv is not installed; install uv, then run: uv tool install --upgrade 'graphifyy[sql]'" >&2
 fi
+
+"$template_root/scripts/verify-setup.sh"
 
 cat <<'EOF'
 
