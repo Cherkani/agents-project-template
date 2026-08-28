@@ -15,3 +15,7 @@ Search ClickUp for a test task without creating or changing anything.
 ## Codex Accounts
 
 Authenticate each account separately. Share only sanitized configuration, skills, project instructions, and tools. Do not share `auth.json`, memories, sessions, or runtime databases.
+
+## DeepSeek Harness
+
+DeepSeek Harness is optional. It is an editor adapter, not part of the core CStack/gstack architecture. If configured, point it at one selected Codex profile or provider at a time. It does not merge two Codex accounts, authentication files, or live conversations. Keep its provider credentials in its own local configuration and never commit them.

@@ -21,10 +21,12 @@ officialskills.sh = discovery source for missing specialist skills
 
 ```mermaid
 flowchart LR
-    C1["Codex 1<br/>separate auth"] --> SH["Shared Codex Home<br/>config + skills + tools"]
-    C2["Codex 2<br/>separate auth"] --> SH
-    VS[VS Code / DeepSeek Harness] --> SH
-    SH --> CS[$cstack router]
+    SH["Shared Tool Store<br/>gstack + CStack + config"] --> C1["Codex 1 profile<br/>separate auth"]
+    SH --> C2["Codex 2 profile<br/>separate auth"]
+    VS["Optional VS Code /<br/>DeepSeek Harness adapter"] --> CP["one selected Codex profile"]
+    CP --> CS[$cstack router]
+    C1 --> CS[$cstack router]
+    C2 --> CS
     CS --> CT["$cstack-ticket<br/>ClickUp"]
     CS --> GS[gstack specialists]
     CS --> OS["officialskills.sh<br/>when a skill is missing"]
@@ -34,7 +36,7 @@ flowchart LR
     GS --> REL[ship + deploy + canary]
 ```
 
-Codex1 and Codex2 share tools and instructions through `CODEX_SHARED_HOME`, while their authentication remains separate. Do not run both profiles at the same time against shared Codex runtime databases.
+Codex1 and Codex2 share installed tools and sanitized configuration through `CODEX_SHARED_HOME`, while their authentication remains separate. Profile launchers may point both accounts at shared non-auth state, but they must not run concurrently against shared SQLite or session files. DeepSeek Harness is optional and should call one selected profile; it is not required and does not merge account context.
 
 ## New Laptop Setup
 
@@ -59,6 +61,8 @@ This installs or updates:
 - reviewed UI, security, testing, Supabase, Vercel, and accessibility skills
 - shared Codex configuration
 - Graphify tooling when `uv` is available
+
+DeepSeek Harness is not a prerequisite. Use it only if you specifically want its VS Code panel or provider routing.
 
 The default shared home is:
 

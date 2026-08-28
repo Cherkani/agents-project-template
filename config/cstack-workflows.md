@@ -29,4 +29,4 @@ Use the narrowest specialist that matches the work. CStack supplies project cont
 
 ## Integration Boundary
 
-Do not edit generated gstack skill files to add project rules. They are regenerated during upgrades. Put reusable repository rules in `AGENTS.md`; put ClickUp-specific behavior in `$cstack-ticket`; let gstack own planning, implementation quality, QA, security, documentation, and release.
+Do not edit generated gstack skill files to add project rules. They are regenerated during upgrades. Put reusable repository rules in `AGENTS.md`; put ClickUp-specific behavior in `$cstack-ticket`; let gstack own planning, implementation quality, QA, security, documentation, and release. DeepSeek Harness is optional and must not be treated as a shared context or authentication layer.
