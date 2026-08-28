@@ -3,6 +3,8 @@
 ## ClickUp
 
 ClickUp is a host-level MCP connection, not a repository file. Connect it once in the Codex integrations/apps area on each laptop.
+Its presence does not enable ticketing for every repository. Each task must explicitly choose `none` or `clickup` before planning;
+projects whose `AGENTS.md` declares `none` must not call ClickUp.
 
 Project `AGENTS.md` files may contain workspace and list placeholders, but must never contain OAuth tokens or private credentials.
 

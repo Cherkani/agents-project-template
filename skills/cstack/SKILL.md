@@ -1,6 +1,6 @@
 ---
 name: cstack
-description: Route a project task through Cherkani project rules, Graphify, ClickUp context, gstack workflows, and the smallest relevant official skill.
+description: Route a project task through Cherkani project rules, Graphify, optional ClickUp context, gstack workflows, and the smallest relevant official skill.
 ---
 
 # CStack Router
@@ -12,9 +12,10 @@ CStack is the project-aware entry point. gstack remains the primary execution sy
 3. Classify the request: idea/scope, architecture, implementation, bug, UI, database, security, browser QA, documentation, deployment, or release.
 4. Choose the narrowest installed gstack workflow. Prefer `/autoplan` for large features, `/plan-eng-review` for architecture, `/investigate` for bugs, `/qa` for application testing, `/cso` for security, `/document-generate` or `/document-release` for documentation, and `/ship` or `/land-and-deploy` for delivery.
 5. Check the local skill catalog before installing anything. When a needed capability is missing or unfamiliar, search `https://officialskills.sh/` first, inspect the linked source repository, and install only the smallest reviewed skill that matches the project stack.
-6. Use `$cstack-ticket` when the user requests ClickUp work. Search for duplicates first, use the mapped project list and configured Aymen Cherkani assignee, and state the external write before creating or changing a task.
-7. Follow the project's branch, test, security, time-tracking, and release rules from `AGENTS.md`. Do not deploy, change production data, or modify existing ClickUp tasks without explicit approval.
-8. At the beginning of a substantive task, briefly report the affected area, selected skills, Graphify status, goal, acceptance checks, and risks. Then perform the selected workflow rather than only listing suggestions.
+6. Before planning, determine the task tracking mode from `AGENTS.md` or the user's instruction: `none` or `clickup`. If it is not stated, ask the user before proceeding with planning.
+7. In `clickup` mode, use `$cstack-ticket`, search for duplicates first, use the mapped project list and configured assignee, and state the external write before creating or changing a task. In `none` mode, do not call ClickUp.
+8. Follow the project's branch, test, security, time-tracking, and release rules from `AGENTS.md`. Do not deploy, change production data, or modify existing ClickUp tasks without explicit approval.
+9. At the beginning of a substantive task, briefly report the affected area, tracking mode, selected skills, Graphify status, goal, acceptance checks, and risks. Then perform the selected workflow rather than only listing suggestions.
 
 ## Routing Examples
 

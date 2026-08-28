@@ -1,11 +1,11 @@
 # CStack Workflow Map
 
-CStack is the short, Cherkani-specific router and ClickUp integration. gstack is the primary maintained workflow library and is installed with the `gstack-` prefix so both systems can coexist without name collisions.
+CStack is the short, Cherkani-specific router with optional ClickUp integration. gstack is the primary maintained workflow library and is installed with the `gstack-` prefix so both systems can coexist without name collisions.
 
 ## Main Workflow
 
 ```text
-$cstack -> /gstack-autoplan -> implementation -> /gstack-qa -> /gstack-review -> /gstack-ship -> /gstack-land-and-deploy
+$cstack -> choose tracking mode -> /gstack-autoplan -> implementation -> /gstack-qa -> /gstack-review -> /gstack-ship -> /gstack-land-and-deploy
 ```
 
 ## CStack To Gstack Routing
@@ -13,7 +13,7 @@ $cstack -> /gstack-autoplan -> implementation -> /gstack-qa -> /gstack-review ->
 | CStack command | Use these gstack specialists when needed |
 | --- | --- |
 | `$cstack` | Inspect project context and route to the correct gstack and official skills. |
-| `$cstack-ticket` | Search/create the mapped ClickUp task, then use gstack for the complete development lifecycle. |
+| `$cstack-ticket` | In `clickup` mode, search/create the mapped ClickUp task, then use gstack for the complete development lifecycle. |
 | `$cstack-discover` | Search and rank a new skill before installation; never bulk-install the catalog. |
 
 ## Specialist Groups
@@ -25,7 +25,7 @@ $cstack -> /gstack-autoplan -> implementation -> /gstack-qa -> /gstack-review ->
 - Delivery: `setup-deploy`, `landing-report`, `ship`, `land-and-deploy`.
 - Optional platform-specific workflows: iOS, PDF, benchmarking, GBrain, pairing, scraping, and skill maintenance.
 
-Use the narrowest specialist that matches the work. CStack supplies project context, Graphify, ClickUp, and release rules; gstack supplies the detailed execution method.
+Use the narrowest specialist that matches the work. CStack supplies project context, Graphify, optional ClickUp, and release rules; gstack supplies the detailed execution method.
 
 ## Integration Boundary
 

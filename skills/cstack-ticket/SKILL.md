@@ -7,6 +7,9 @@ description: Create or prepare a project ClickUp ticket using the repository map
 
 Use when the user asks to create, prepare, or organize project work in ClickUp.
 
+Before doing anything in ClickUp, read `AGENTS.md` and confirm the task tracking mode is explicitly `clickup`. If it is `none` or
+missing, stop and ask for the mode before using ClickUp.
+
 1. Read the project `AGENTS.md` and identify the mapped workspace, list, timezone, and default assignee.
 2. Search ClickUp first for a matching task. Never create a duplicate when an existing task covers the request.
 3. Before an external write, state the exact task name, destination list, assignee, and intended action. Do not modify, reassign, close, or delete an existing task unless the user explicitly identifies it and requests that change.

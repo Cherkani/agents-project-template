@@ -31,12 +31,21 @@ Inspect the relevant code and docs before editing. Keep this short for trivial q
 - Define the goal and acceptance criteria before implementation.
 - Use the project's architecture and existing patterns before adding dependencies or abstractions.
 
+## Project Tracking Decision
+
+Before planning or implementation, explicitly choose the tracking mode for this task:
+
+- `none`: work locally with the repository workflow; do not call ClickUp or create tracking tasks.
+- `clickup`: use the configured ClickUp workspace/list and `$cstack-ticket` rules below.
+
+The choice is task-specific and must be stated in the startup summary. Do not infer `clickup` merely because the host has a ClickUp integration.
+
 ## CStack Ticket Workflow
 
-Use CStack as the project-aware router and for the project-specific ClickUp integration:
+Use CStack as the project-aware router. Use the project-specific ClickUp integration only when the tracking mode is `clickup`:
 
 - `$cstack`: inspect the project, Graphify map, available skills, and route the task to the correct gstack workflow.
-- `$cstack-ticket`: search or create a ClickUp task using the repository mapping, naming, scheduling, assignee, and milestone rules.
+- `$cstack-ticket`: only in `clickup` mode; search or create a ClickUp task using the repository mapping, naming, scheduling, assignee, and milestone rules.
 - `$cstack-discover`: search officialskills.sh, compare the best matching skills, and ask for approval before installing one.
 
 Use gstack as the primary development workflow: `/gstack-autoplan`, `/gstack-review`, `/gstack-qa`, `/gstack-cso`, `/gstack-document-generate`, `/gstack-document-release`, `/gstack-ship`, `/gstack-land-and-deploy`, and `/gstack-canary`.
@@ -59,6 +68,8 @@ Use gstack as the primary development workflow: `/gstack-autoplan`, `/gstack-rev
 - Before handoff, run broader applicable checks and report failures honestly.
 
 ## ClickUp (Optional)
+
+Set the task tracking mode to `clickup` before using this section. If the project or task uses `none`, skip all ClickUp reads and writes.
 
 - Workspace: `REPLACE_CLICKUP_WORKSPACE_NAME`
 - Workspace ID: `REPLACE_CLICKUP_WORKSPACE_ID`

@@ -17,6 +17,10 @@ AGENTS.md = project rules and local operating contract
 officialskills.sh = discovery source for missing specialist skills
 ```
 
+ClickUp is optional per project and per task. Before planning, choose `none` or `clickup`. Doctor and WhatsApp use their mapped
+ClickUp lists; the Supabase workspace defaults to `none` and does not use the ticketing workflow unless you explicitly enable it for
+a task.
+
 ## How It Fits Together
 
 ```mermaid
@@ -117,6 +121,15 @@ Start every meaningful task with:
 $cstack
 ```
 
+The first planning decision is the tracking mode:
+
+```text
+Tracking: none    # no ClickUp reads or writes
+Tracking: clickup # use the mapped ClickUp list and $cstack-ticket
+```
+
+Do not let the presence of a ClickUp MCP connection choose the mode automatically.
+
 CStack reads the project instructions, Git state, Graphify map, scripts, and available skills. It chooses the appropriate gstack workflow.
 
 Create or find work in ClickUp with:
@@ -124,6 +137,8 @@ Create or find work in ClickUp with:
 ```text
 $cstack-ticket
 ```
+
+Use this only after explicitly choosing `clickup`; it is not part of the default workflow.
 
 Then use gstack as the primary workflow:
 
