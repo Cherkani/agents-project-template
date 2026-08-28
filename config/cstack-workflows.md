@@ -24,3 +24,7 @@ $cstack-ticket -> /gstack-autoplan -> implementation -> /gstack-qa -> /gstack-re
 - Optional platform-specific workflows: iOS, PDF, benchmarking, GBrain, pairing, scraping, and skill maintenance.
 
 Use the narrowest specialist that matches the work. CStack supplies project context, Graphify, ClickUp, and release rules; gstack supplies the detailed execution method.
+
+## Integration Boundary
+
+Do not edit generated gstack skill files to add project rules. They are regenerated during upgrades. Put reusable repository rules in `AGENTS.md`; put ClickUp-specific behavior in `$cstack-ticket`; let gstack own planning, implementation quality, QA, security, documentation, and release.

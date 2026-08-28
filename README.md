@@ -55,6 +55,8 @@ Then apply the project instructions to each repository:
 
 This reproduces the shared gstack, Graphify, configuration template, project instructions, and recommended workflow. ClickUp still needs one interactive OAuth connection per laptop because account credentials cannot safely be cloned from Git.
 
+The installer configures gstack as the primary workflow with proactive routing, prefixed commands, telemetry disabled, explicit checkpoints, Codex reviews enabled, and the pre-push secret-redaction hook enabled.
+
 ## Recommended Workflow
 
 ```text
