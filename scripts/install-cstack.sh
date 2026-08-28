@@ -6,7 +6,7 @@ template_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 backup_root="$codex_home/skills/.aymenstack-backups/$(date +%Y%m%d-%H%M%S)"
 
 mkdir -p "$codex_home/skills"
-for skill_dir in "$template_root"/skills/aymen-*; do
+for skill_dir in "$template_root"/skills/cstack-*; do
   [[ -d "$skill_dir" ]] || continue
   name="$(basename "$skill_dir")"
   destination="$codex_home/skills/$name"
@@ -23,4 +23,4 @@ for skill_dir in "$template_root"/skills/aymen-*; do
   echo "installed $name"
 done
 
-echo "AymenStack installed in $codex_home/skills"
+echo "CStack installed in $codex_home/skills"

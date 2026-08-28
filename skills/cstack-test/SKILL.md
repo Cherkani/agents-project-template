@@ -1,9 +1,9 @@
 ---
-name: aymen-test
+name: cstack-test
 description: Verify an implementation with Graphify, project quality checks, browser flows, security checks, and ClickUp evidence. Use before review or release.
 ---
 
-# AymenStack Test
+# CStack Test
 
 1. Run `graphify update .` and confirm the affected relationships are present.
 2. Run the smallest relevant lint, type, unit, integration, migration, and build checks.

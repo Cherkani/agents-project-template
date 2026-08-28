@@ -1,11 +1,11 @@
 ---
-name: aymen-understand
+name: cstack-understand
 description: Explain a completed implementation after testing and generate project-local documentation covering concepts, changed structure, reproduction steps, exercises, and follow-up risks.
 ---
 
-# AymenStack Understand
+# CStack Understand
 
-Use after `$aymen-test`, or when the user asks for a technical walkthrough of completed work.
+Use after `$cstack-test`, or when the user asks for a technical walkthrough of completed work.
 
 1. Read `AGENTS.md`, the relevant project docs, the current diff, recent commits, and the test evidence. Use Graphify to confirm the affected files and relationships when its graph exists.
 2. Explain the feature in project terms: the problem, core concept, data flow, important decisions, changed files and responsibilities, and how the parts connect.

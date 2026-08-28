@@ -31,10 +31,10 @@ On a new laptop or after creating a new shared Codex home:
 
 This installs or updates gstack, installs the recommended skills, and creates a sanitized `config.toml` only when the shared Codex home does not already have one. It never copies authentication, memory, session, history, or runtime files. See `config/skills-manifest.md` for the recommended skill groups.
 
-It also installs **AymenStack**, the project workflow layer built around your preferred process:
+It also installs **CStack**, the project workflow layer built around your preferred process:
 
 ```text
-$aymen-plan -> $aymen-build -> $aymen-test -> $aymen-understand -> $aymen-release
+$cstack-plan -> $cstack-build -> $cstack-test -> $cstack-understand -> $cstack-release
 ```
 
 The default shared home is `~/.codex_shared`. Override it with `CODEX_SHARED_HOME=/path/to/shared-home` when needed.

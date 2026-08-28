@@ -25,7 +25,7 @@ else
 fi
 
 CODEX_HOME="$shared_home" "$gstack_dir/setup" --host codex
-"$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/install-aymenstack.sh"
+"$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/install-cstack.sh"
 
 cat <<EOF
 

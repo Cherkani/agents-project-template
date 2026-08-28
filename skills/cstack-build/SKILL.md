@@ -1,9 +1,9 @@
 ---
-name: aymen-build
-description: Implement an approved feature using the AymenStack workflow, existing project patterns, ClickUp progress tracking, and Graphify updates. Use after planning is approved.
+name: cstack-build
+description: Implement an approved feature using the CStack workflow, existing project patterns, ClickUp progress tracking, and Graphify updates. Use after planning is approved.
 ---
 
-# AymenStack Build
+# CStack Build
 
 1. Confirm the approved goal and acceptance criteria.
 2. Work on `feature/<clickup-task-id>-<short-slug>` from `develop` when a ClickUp task exists.

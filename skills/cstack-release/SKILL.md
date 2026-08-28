@@ -1,9 +1,9 @@
 ---
-name: aymen-release
+name: cstack-release
 description: Prepare and execute a tracked develop-to-production release using ClickUp inventory, gstack review, ship, land-and-deploy, and canary verification. Use only with explicit release approval.
 ---
 
-# AymenStack Release
+# CStack Release
 
 1. Confirm the production branch from `AGENTS.md` and verify the working tree and CI state.
 2. Run the release inventory: `git log <production-branch>..develop --oneline` and `git diff --stat <production-branch>...develop`.

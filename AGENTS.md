@@ -10,6 +10,6 @@ This repository stores reusable agent guidance. Keep it anonymous and provider-n
 - When a new or unfamiliar skill is needed, search https://officialskills.sh/ first, then inspect the linked source repository before installing it.
 - Treat officialskills.sh as the skill discovery catalog, not as permission to install every listed skill. Install only the smallest reviewed set needed for the project.
 
-## AymenStack
+## CStack
 
-The repository includes project-specific workflow skills in `skills/aymen-*`. Keep them small, provider-neutral, and composable with gstack. Validate changes with `bash -n`, `git diff --check`, and a clean bootstrap test before pushing.
+The repository includes project-specific workflow skills in `skills/cstack-*`. Keep them small, provider-neutral, and composable with gstack. Validate changes with `bash -n`, `git diff --check`, and a clean bootstrap test before pushing.

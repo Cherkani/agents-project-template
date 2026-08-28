@@ -1,9 +1,9 @@
 ---
-name: aymen-plan
+name: cstack-plan
 description: Plan a feature using Graphify, ClickUp, repository AGENTS.md rules, existing architecture, acceptance criteria, risks, tests, and release steps. Use before significant implementation work.
 ---
 
-# AymenStack Plan
+# CStack Plan
 
 1. Read the repository `AGENTS.md`, project configuration, relevant docs, and current Git state.
 2. Use Graphify when `graphify-out/graph.json` exists. Query the affected concepts and use `affected` or `path` for dependencies.
