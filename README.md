@@ -36,6 +36,7 @@ It also installs **CStack**, the Cherkani-specific router and ClickUp integratio
 ```text
 $cstack
 $cstack-ticket
+$cstack-discover
 ```
 
 The default shared home is `~/.codex_shared`. Override it with `CODEX_SHARED_HOME=/path/to/shared-home` when needed.
@@ -62,6 +63,8 @@ The installer configures gstack as the primary workflow with proactive routing, 
 
 ```text
 $cstack -> gstack planning/build/test/review/documentation/release
+
+Use `$cstack-discover <capability>` when you need a new skill. It searches officialskills.sh first, checks overlap and source quality, and asks before installing anything.
 ```
 
 For branch-based work, use `feature/<clickup-task-id>-<short-slug> -> develop -> production`. See `config/release-workflow.md` for the release evidence and gstack command sequence.

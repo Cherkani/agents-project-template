@@ -36,9 +36,10 @@ This template adds two focused project integration skills in `skills/cstack-*`:
 ```text
 cstack
 cstack-ticket
+cstack-discover
 ```
 
-`cstack` routes work through project rules, Graphify, gstack, and official skill discovery. `cstack-ticket` provides your ClickUp search, task naming, scheduling, assignment, milestone, and safety rules. They intentionally do not duplicate gstack's planning, implementation, QA, security, documentation, or release workflows.
+`cstack` routes work through project rules, Graphify, gstack, and official skill discovery. `cstack-ticket` provides your ClickUp search, task naming, scheduling, assignment, milestone, and safety rules. `cstack-discover` compares skill sources and overlap before installation. They intentionally do not duplicate gstack's planning, implementation, QA, security, documentation, or release workflows.
 
 The full gstack catalog is installed with the `gstack-` prefix. See `config/cstack-workflows.md` for routing and specialist groups. Keeping the prefix avoids collisions with CStack and other skill packs while preserving every gstack command.
 

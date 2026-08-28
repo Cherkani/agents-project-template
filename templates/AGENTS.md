@@ -37,6 +37,7 @@ Use CStack as the project-aware router and for the project-specific ClickUp inte
 
 - `$cstack`: inspect the project, Graphify map, available skills, and route the task to the correct gstack workflow.
 - `$cstack-ticket`: search or create a ClickUp task using the repository mapping, naming, scheduling, assignee, and milestone rules.
+- `$cstack-discover`: search officialskills.sh, compare the best matching skills, and ask for approval before installing one.
 
 Use gstack as the primary development workflow: `/gstack-autoplan`, `/gstack-review`, `/gstack-qa`, `/gstack-cso`, `/gstack-document-generate`, `/gstack-document-release`, `/gstack-ship`, `/gstack-land-and-deploy`, and `/gstack-canary`.
 

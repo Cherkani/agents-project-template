@@ -14,6 +14,7 @@ $cstack -> /gstack-autoplan -> implementation -> /gstack-qa -> /gstack-review ->
 | --- | --- |
 | `$cstack` | Inspect project context and route to the correct gstack and official skills. |
 | `$cstack-ticket` | Search/create the mapped ClickUp task, then use gstack for the complete development lifecycle. |
+| `$cstack-discover` | Search and rank a new skill before installation; never bulk-install the catalog. |
 
 ## Specialist Groups
 
