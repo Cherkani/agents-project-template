@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+auth.json
+memories_*.sqlite
+sessions/
+graphify-out/
+.DS_Store
