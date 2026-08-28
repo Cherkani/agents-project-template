@@ -21,15 +21,15 @@ officialskills.sh = discovery source for missing specialist skills
 
 ```mermaid
 flowchart LR
-    C1[Codex 1\nseparate auth] --> SH[Shared Codex Home\nconfig + skills + tools]
-    C2[Codex 2\nseparate auth] --> SH
+    C1["Codex 1<br/>separate auth"] --> SH["Shared Codex Home<br/>config + skills + tools"]
+    C2["Codex 2<br/>separate auth"] --> SH
     VS[VS Code / DeepSeek Harness] --> SH
     SH --> CS[$cstack router]
-    CS --> CT[$cstack-ticket\nClickUp]
+    CS --> CT["$cstack-ticket<br/>ClickUp"]
     CS --> GS[gstack specialists]
     CS --> OS[officialskills.sh\nwhen a skill is missing]
-    GS --> GF[Graphify\nproject graph]
-    GS --> AR[AGENTS.md\nproject rules]
+    GS --> GF["Graphify<br/>project graph"]
+    GS --> AR["AGENTS.md<br/>project rules"]
     GS --> TEST[tests + browser + security]
     GS --> REL[ship + deploy + canary]
 ```
@@ -174,15 +174,15 @@ graphify affected "src/path/to/changed-file.ts"
 ```mermaid
 flowchart LR
     T[ClickUp task] --> F[feature/task-id-slug]
-    F --> P[/gstack-autoplan]
+    F --> P["/gstack-autoplan"]
     P --> B[Implement]
-    B --> Q[/gstack-qa + /gstack-review]
+    B --> Q["/gstack-qa + /gstack-review"]
     Q --> D[PR into develop]
     D --> R[Release inventory]
-    R --> S[/gstack-ship]
+    R --> S["/gstack-ship"]
     S --> M[Approved promotion]
-    M --> L[/gstack-land-and-deploy]
-    L --> C[/gstack-canary]
+    M --> L["/gstack-land-and-deploy"]
+    L --> C["/gstack-canary"]
     C --> PROD[Production]
 ```
 
