@@ -1,0 +1,8 @@
+# Safe shared Codex configuration template.
+# Copy this to $CODEX_HOME/config.toml only when creating a new Codex home.
+# Never commit auth.json, memories, sessions, or runtime databases.
+
+# model = "REPLACE_WITH_YOUR_MODEL"
+
+[features]
+multi_agent = true

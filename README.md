@@ -21,6 +21,16 @@ The script will:
 
 If the target already has `AGENTS.md`, merge the template sections manually so existing project rules are preserved.
 
+## Install Shared Codex Tools
+
+On a new laptop or after creating a new shared Codex home:
+
+```bash
+./scripts/install-codex-shared.sh
+```
+
+This installs or updates gstack and creates a sanitized `config.toml` only when the shared Codex home does not already have one. It never copies authentication, memory, session, history, or runtime files. See `config/skills-manifest.md` for the recommended skill groups.
+
 ## Recommended Workflow
 
 ```text
